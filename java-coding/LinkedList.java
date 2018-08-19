@@ -115,6 +115,22 @@ public class LinkedList {
         }
     }
 
+    public void append(int i){
+        this.append(new Node(i));
+    }
+
+    public void reverse() {
+        Node first = null;
+        Node x = this.head;
+        while( x != null){
+            Node y = x.getNext();
+            x.setNext(first);
+            first = x;
+            x = y;
+        }
+        this.head = first;
+    }
+
     // assumes the Linked List is sorted in ascending order
     public static void intersection(LinkedList first, LinkedList second){
         Node fNode = first.getHead();
@@ -169,9 +185,21 @@ public class LinkedList {
         intersection(first, second);
     }
 
+    public static void runReverseTest(){
+        LinkedList nList = new LinkedList();
+        for(int i=0; i<10; i++){
+            nList.append(new Node(i));
+        }
+        nList.printLinkedList();
+        nList.reverse();
+        nList.printLinkedList();
+    }
+
     public static void main(String args[]){
         //runSwapNodeTest();
 
-        runNodeIntersectionTest();
+        //runNodeIntersectionTest();
+
+        runReverseTest();
     }
 }
