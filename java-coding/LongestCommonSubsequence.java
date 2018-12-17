@@ -20,18 +20,18 @@ class LongestCommonSubsequence {
         for(int i = 1; i <= x.length; i++){
            for(int j = 1; j <= y.length; j++){
                 if(x[i-1] == y[j-1]){
-                    System.out.println(x[i-1] + "UPANDLEFT");
+                    // System.out.println(x[i-1] + "UPANDLEFT");
                     c[i][j] = c[i-1][j-1] + 1;
                     b[i][j] = DIRECTIONS.UPANDLEFT;
                 }
                 else{
                     if(c[i-1][j] > c[i][j-1]){
-                        System.out.println("UP");
+                        // System.out.println("UP");
                         c[i][j] = c[i-1][j];
                         b[i][j] = DIRECTIONS.UP;
                     }
                     else{
-                        System.out.println("LEFT");
+                        // System.out.println("LEFT");
                         c[i][j] = c[i][j-1];
                         b[i][j] = DIRECTIONS.LEFT;
                     }

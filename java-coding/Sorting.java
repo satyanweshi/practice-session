@@ -102,6 +102,15 @@ public class Sorting {
         return i+1;
     }
 
+    private static void bubbleSort(int arr[]){
+        if(arr == null || arr.length == 1) return;
+        for(int i=arr.length; i >= 2;i--){
+            for(int j=0;j<i-1; j++){
+                if(arr[j] > arr[j+1]) swap(arr, j, j+1);
+            }
+        }
+    }
+
     public static void main(String args[]){
         int[] arr = {29, 44, 31, 2, 4, 78, 65, 11, 52, 21, 100, 97, 27, 54, 23, 105, 123, 33, 89, 91};
 
@@ -109,7 +118,8 @@ public class Sorting {
         printArray(arr);
         // insertionSort(arr);
         // heapSort(arr);
-        quickSort(arr);
+        // quickSort(arr);
+        bubbleSort(arr);
         printArray(arr);
         System.out.println(System.currentTimeMillis() - timer);
     }

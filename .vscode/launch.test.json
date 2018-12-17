@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "practice-session",
+                "projectName": "practice-session",
+                "workingDirectory": "/Users/Varun/git/practice-session/quick-sort-vertx",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "practice-session",
+                "projectName": "practice-session",
+                "workingDirectory": "/Users/Varun/git/practice-session/quick-sort-vertx",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
