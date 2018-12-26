@@ -1,0 +1,22 @@
+{
+  "name": "socket-tut",
+  "version": "1.0.0",
+  "description": "Chat example to learn sockets",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "jslint": "node lint"
+  },
+  "keywords": [
+    "chat",
+    "socket",
+    "example"
+  ],
+  "author": "Varun Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "jslint": "^0.12.0",
+    "socket.io": "^2.2.0"
+  }
+}
