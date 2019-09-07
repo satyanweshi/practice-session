@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.facpro.vertx.MyFirstVerticleTest" time="0.748" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.facpro.vertx.MyFirstVerticleTest" time="1.038" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Users/Varun/git/practice-session/vertx/first-vertx-app/target/surefire/surefirebooter5591561122086566358.jar /Users/Varun/git/practice-session/vertx/first-vertx-app/target/surefire 2019-06-08T19-36-29_152-jvmRun1 surefire8368658459848230254tmp surefire_07144096353485376504tmp"/>
+    <property name="sun.java.command" value="/Users/Varun/git/practice-session/vertx/first-vertx-app/target/surefire/surefirebooter3270313844804397877.jar /Users/Varun/git/practice-session/vertx/first-vertx-app/target/surefire 2019-06-15T21-30-25_293-jvmRun1 surefire7164274899016952619tmp surefire_07547978967977500771tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="surefire.test.class.path" value="/Users/Varun/git/practice-session/vertx/first-vertx-app/target/test-classes:/Users/Varun/git/practice-session/vertx/first-vertx-app/target/classes:/Users/Varun/.m2/repository/io/vertx/vertx-core/3.0.0/vertx-core-3.0.0.jar:/Users/Varun/.m2/repository/io/netty/netty-common/4.0.28.Final/netty-common-4.0.28.Final.jar:/Users/Varun/.m2/repository/io/netty/netty-buffer/4.0.28.Final/netty-buffer-4.0.28.Final.jar:/Users/Varun/.m2/repository/io/netty/netty-transport/4.0.28.Final/netty-transport-4.0.28.Final.jar:/Users/Varun/.m2/repository/io/netty/netty-handler/4.0.28.Final/netty-handler-4.0.28.Final.jar:/Users/Varun/.m2/repository/io/netty/netty-codec/4.0.28.Final/netty-codec-4.0.28.Final.jar:/Users/Varun/.m2/repository/io/netty/netty-codec-http/4.0.28.Final/netty-codec-http-4.0.28.Final.jar:/Users/Varun/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.5.3/jackson-core-2.5.3.jar:/Users/Varun/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.5.3/jackson-databind-2.5.3.jar:/Users/Varun/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.5.0/jackson-annotations-2.5.0.jar:/Users/Varun/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/Varun/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/Varun/.m2/repository/io/vertx/vertx-unit/3.0.0/vertx-unit-3.0.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/Varun/git/practice-session/vertx/first-vertx-app/target/surefire/surefirebooter5591561122086566358.jar"/>
+    <property name="surefire.real.class.path" value="/Users/Varun/git/practice-session/vertx/first-vertx-app/target/surefire/surefirebooter3270313844804397877.jar"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -62,5 +62,5 @@
     <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="testMyApplication" classname="com.facpro.vertx.MyFirstVerticleTest" time="0.651"/>
+  <testcase name="testMyApplication" classname="com.facpro.vertx.MyFirstVerticleTest" time="0.937"/>
 </testsuite>

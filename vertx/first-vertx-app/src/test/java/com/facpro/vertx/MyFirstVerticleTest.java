@@ -1,9 +1,15 @@
 package com.facpro.vertx;
 
+import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Vertx;
+import io.vertx.core.json.JsonObject;
 import io.vertx.ext.unit.Async;
 import io.vertx.ext.unit.TestContext;
 import io.vertx.ext.unit.junit.VertxUnitRunner;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,11 +23,16 @@ import org.junit.runner.RunWith;
 {
 
     private Vertx vertx;
+    private int port;
     
     @Before
-    public void setup(TestContext context) {
+    public void setup(TestContext context) throws IOException {
         vertx = Vertx.vertx();
-        vertx.deployVerticle(MyFirstVerticle.class.getName(), context.asyncAssertSuccess());
+        ServerSocket socket = new ServerSocket(0);
+        port = socket.getLocalPort();
+        socket.close();
+        DeploymentOptions options = new DeploymentOptions().setConfig(new JsonObject().put("http.port", port));
+        vertx.deployVerticle(MyFirstVerticle.class.getName(), options, context.asyncAssertSuccess());
     }
 
     @After
@@ -33,7 +44,7 @@ import org.junit.runner.RunWith;
     public void testMyApplication(TestContext context){
         final Async async = context.async();
 
-        vertx.createHttpClient().getNow(8080, "localhost", "/", 
+        vertx.createHttpClient().getNow(port, "localhost", "/", 
             response -> {
                 response.handler(body -> {
                     context.assertTrue(body.toString().contains("Hello"));

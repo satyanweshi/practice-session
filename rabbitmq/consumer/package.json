@@ -1,0 +1,14 @@
+{
+  "name": "rabbitmq-consumer",
+  "version": "1.0.0",
+  "description": "Learning rabbitmq",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Varun Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.5"
+  }
+}
